@@ -23,10 +23,10 @@ def reverse_array(arr)
 end
 
 def kesha_maker(arr)
-  arr.each do |name|
+  arr.each_with_index do |name, i|
     chars = name.split
     chars[2] = "$"
-    name = chars.join
+    arr[i] = chars.join
   end
   arr
 end

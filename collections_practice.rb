@@ -24,7 +24,7 @@ end
 
 def kesha_maker(arr)
   arr.each_with_index do |name, i|
-    chars = name.split('')
+    chars = name.split('').to_a
     chars[2] = "$"
     arr[i] = chars.join('')
   end
